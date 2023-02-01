@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
 import { RmqModule, DatabaseModule } from "@app/common";
+import { LocalStrategy } from './strategies/local.strategy';
 import * as Joi from 'joi'
 
 import { AuthController } from './auth.controller';
